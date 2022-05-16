@@ -18,10 +18,9 @@ class Kernel extends ConsoleKernel
     protected function schedule(Schedule $schedule)
     {
         // $schedule->command('inspire')->hourly();
-        // $schedule->call(function () {
-        // })->everyFiveMinutes();
-
-        $schedule->call(FeedControllerFacade::refresh() )->everyFiveMinutes();
+        $schedule->call(function () {
+            FeedControllerFacade::refresh();
+        })->everyFiveMinutes();
     }
 
     /**
