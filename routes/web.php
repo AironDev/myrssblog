@@ -15,10 +15,8 @@ use App\Http\Controllers\FeedController;
 |
 */
 
-Route::get('/', function () {
-    return view('index');
-});
 
+Route::get('/', [FeedReaderController::class, 'index'])->name('page.index');
 Route::get('/following', [FeedReaderController::class, 'index'])->name('page.index');
 Route::patch('/following/toggle-read/{id}', [FeedReaderController::class, 'toggleRead'])->name('news.toggle_read');
 Route::get('/about', [FeedReaderController::class, 'aboutPage'])->name('page.about');
