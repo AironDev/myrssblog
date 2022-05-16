@@ -48,7 +48,7 @@ class FeedController extends Controller
      * @param  \Illuminate\Http\Request  $request
      * @return \Illuminate\Http\Response
      */
-    public function refresh(Request $request)
+    public function refresh()
     {
         
         $rsslinks = Feed::whereActive(1)->pluck('link');

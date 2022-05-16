@@ -14,7 +14,7 @@
                     </a>
                     <div class="px-6 py-5">
                         <div class="font-semibold text-lg mb-2"><a class="text-gray-900 hover:text-gray-700" href="{{$item->link}}">{{$item->title}}</a></div>
-                        <p class="text-gray-700 mb-1" title="Published date">21 June 2020 08:04 AM</60
+                        <p class="text-gray-700 mb-1" title="Published date">{{ $item->pub_date}}</p>
                         <p class="text-gray-800">{!! $item->summary !!}</p>
                     </div>
 
