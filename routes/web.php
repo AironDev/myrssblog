@@ -20,7 +20,7 @@ Route::get('/', [FeedReaderController::class, 'index'])->name('page.index');
 Route::get('/following', [FeedReaderController::class, 'index'])->name('page.index');
 Route::patch('/following/toggle-read/{id}', [FeedReaderController::class, 'toggleRead'])->name('news.toggle_read');
 Route::get('/about', [FeedReaderController::class, 'aboutPage'])->name('page.about');
-Route::get('/manage', [FeedReaderController::class, 'managePage'])->name('page.manage');
+Route::get('/following/manage', [FeedReaderController::class, 'managePage'])->name('page.manage');
 
 // manage
 Route::get('feeds/refresh', [FeedController::class, 'refresh'])->name('feeds.refresh');
