@@ -16,12 +16,13 @@
 
     </div>
 
-    <div class="flex mt-20 w-full">
-        <a href="#" onclick="toggleModal()" class="inline-block mx-auto mb-3 px-4 py-2 bg-green-200 text-gray-700 font-medium rounded-full">Add New
+    <div class="flex  justify-center mt-20 md:w-1/3 mx-auto">
+        
+        <a href="#" onclick="toggleModal()" class="mx-auto mb-3 px-4 py-2 bg-green-200 text-gray-700 font-medium rounded">Add New
             <span class="px-2 py-1 ml-1 text-xs font-semibold bg-teal-300 text-teal-800 rounded-full">+</span>
         </a>
 
-        <a href="{{ route('feeds.refresh') }}"  class="inline-block mx-auto mb-3 px-4 py-2 bg-green-200 text-gray-700 font-medium rounded-full">Refresh
+        <a href="{{ route('feeds.refresh') }}"  class=" mx-auto mb-3 px-4 py-2 bg-green-200 text-gray-700 font-medium rounded">Refresh
             <span class="px-2 py-1 ml-1 text-xs font-semibold bg-teal-300 text-teal-800 rounded-full">+</span>
         </a>
     </div>

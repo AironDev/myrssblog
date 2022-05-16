@@ -88,6 +88,22 @@ class FeedReaderController extends Controller
     }
 
     /**
+     * Update the specified resource in storage.
+     *
+     * @param  \Illuminate\Http\Request  $request
+     * @param  int  $id
+     * @return \Illuminate\Http\Response
+     */
+    public function toggleRead(Request $request, $id)
+    {
+        //
+        $newItem = NewsItem::find($id);
+        $newItem->is_read ? $newItem->is_read = 0 : $newItem->is_read = 1;
+        $newItem->save();
+        return redirect()->back();
+    }
+
+    /**
      * Remove the specified resource from storage.
      *
      * @param  int  $id
