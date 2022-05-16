@@ -16,7 +16,7 @@ use App\Http\Controllers\FeedController;
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    return view('index');
 });
 
 Route::get('/following', [FeedReaderController::class, 'index'])->name('page.index');
